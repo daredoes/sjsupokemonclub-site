@@ -1,0 +1,44 @@
+{{ partial "header" . }}
+<div class="front-page">
+  {{ if isset . "Content"}}
+  <div class="row page-content">
+    <div class="col s12 secondary-color-text content-text">
+      {{ .Content }}
+    </div>
+  </div>
+  {{ end }}
+  {{ if isset .Params "section" }}
+  {{ if isset . "Content"}}
+  <hr>
+  {{ end }}
+  {{ with .Site.GetPage "section" "front_page" }}
+  {{ range $index, $s := . }}
+  {{ if $index }}
+  <hr>
+  {{ end }}
+  <div class="row page-content">
+    <a class="anchor" id="{{ $s.title|urlize}}"></a>
+    <p class="title center-align" >{{ $s.title }}</p>
+    {{ with $s.body }}
+    <div class="details context-text">
+      {{ .|markdownify }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
+</div>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{{ partialCached "footer" . }}

@@ -1,0 +1,6 @@
+<a {{ with .Get "url" }}href="{{ . }}"{{ end }}>
+<div class="chip {{ .Get "class"}}" style="{{ .Get "style" }}">
+  <i class="fa {{ .Get "icon"|default "fa-heart"}}"></i>
+  {{ .Inner|markdownify }}
+</div>
+</a>

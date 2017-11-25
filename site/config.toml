@@ -1,0 +1,50 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "SJSU Pokemon Club"
+
+[params]
+  date = "Fridays at 12pm in BBC 320"
+  description = "This club draws on nostalgia and is a growing community that is welcoming to all who share the same interest, or are just beginning to share that interest! Pokemon Club is new to Campus as of Spring 2015, but it is undeniable that this club provides its members with a sense of community outside of their rooms and outside of their jobs. Come join us at club, make new friends, rivals, and discover what it is like to be a part of our growing community. Remember, anyone can join, and there are no member fees!"
+
+  [[menu.main]]
+      name = "About Us"
+      weight = 1
+      url = "/#about"
+
+  [[menu.main]]
+      name = "Events"
+      weight = 2
+      url = "/#events"
+
+  [[menu.main]]
+      name = "Tournaments"
+      identifier = "tournaments"
+      weight = 3
+
+  [[menu.main]]
+      name = "History"
+      weight = 3
+      url = "/#history"
+
+  [[menu.main]]
+      name = "Sign Up"
+      weight = 4
+      url = "https://docs.google.com/forms/d/e/1FAIpQLSeAsRakKNAyl3sm0C4UjjHF2xF5I6ZgbWq47DXJxbVAn56Dhw/viewform"
+
+  [[menu.main]]
+      name = "Certified Trainers"
+      weight = 1
+      url = "/#certTrainers"
+      parent = "tournaments"
+
+  [[menu.main]]
+      name = "Most Recent Tournament"
+      weight = 1
+      url = "/#replay"
+      parent = "tournaments"
+
+  [[menu.main]]
+      name = "Current Regulations"
+      weight = 1
+      url = "/#regulations"
+      parent = "tournaments"
