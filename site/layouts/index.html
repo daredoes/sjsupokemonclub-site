@@ -12,16 +12,16 @@
   <hr>
   {{ end }}
   {{ with .Site.GetPage "section" "front_page" }}
-  {{ range $index, $s := . }}
+  {{ range $index, $s := .Pages }}
   {{ if $index }}
   <hr>
   {{ end }}
   <div class="row page-content">
-    <a class="anchor" id="{{ $s.title|urlize}}"></a>
-    <p class="title center-align" >{{ $s.title }}</p>
-    {{ with $s.body }}
+    <a class="anchor" id="{{ $s.Params.anchor|default $s.Title|urlize}}"></a>
+    <p class="title center-align" >{{ $s.Title }}</p>
+    {{ with $s.Content }}
     <div class="details context-text">
-      {{ .|markdownify }}
+      {{ . }}
     </div>
     {{ end }}
   </div>

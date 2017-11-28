@@ -1,6 +1,7 @@
-<a {{ with .Get "url" }}href="{{ . }}"{{ end }}>
+
 <div class="chip {{ .Get "class"}}" style="{{ .Get "style" }}">
+  {{ with .Get "url" }}<a href="{{ . }}">{{ end }}
   <i class="fa {{ .Get "icon"|default "fa-heart"}}"></i>
-  {{ .Inner|markdownify }}
+  {{- .Inner|markdownify -}}
+  {{ with .Get "url" }}</a>{{ end }}
 </div>
-</a>
