@@ -1,11 +1,3 @@
-<div class="carousel carousel-slider {{ .Get "class" }}" data-indicators="true">
+<div class="carousel carousel-slider context-text {{ .Get "class" }}" data-indicators="true">
 {{ .Inner|markdownify }}
 </div>
-<script>
-$(document).ready(function(){
-      $('.carousel').carousel({
-        duration: {{ .Get "duration" | default 200 }},
-        fullWidth: {{ .Get "fullWidth" | default true }}
-      });
-    });
-</script>

@@ -190,9 +190,11 @@ a.anchor{
   @extend .secondary-color-text;
   text-transform: capitalize;
 }
+$detail-padding: 4em;
 .page-content .details{
-  padding-left: 2em;
-  margin-top: -2em;
+  padding-left: $detail-padding;
+  padding-right: $detail-padding;
+  
   @extend .secondary-color-text
 }
 
@@ -200,6 +202,9 @@ a.anchor{
   @extend .secondary-color-text;
   display: list-item;
 }
+
+
+
 
 .details ul {
   padding-left: 40px;
