@@ -1,14 +1,12 @@
 ---
 title: Draft
-date: 2015-10-02T14:45:25-07:00
+date: 2015-10-02T21:45:25.000Z
 results:
-  - participant: Nick Boyd
+  - participant: Yair
     title: First Place
-  - participant: Shayda Sophia
+  - participant: Tad Mikasa
     title: Second Place
-  - participant: Will Giallo
-    title: Third Place
-  - participant: Alex Vargas
+  - participant: Chris Ngai
     title: Third Place
 ---
 
