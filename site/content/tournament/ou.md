@@ -1,10 +1,12 @@
 ---
 title: OU
-date: 2015-04-24T00:00:00-07:00
+date: 2015-09-04T14:43:52-07:00
 results:
-  - participant: Jason Yan
+  - participant: Javier Ayala
     title: First Place
-  - participant: Khaila Flores
+  - participant: Chris Ngai
     title: Second Place
+  - participant: Shayda Sophia
+    title: Third Place
 ---
 
