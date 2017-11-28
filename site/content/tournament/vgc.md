@@ -1,12 +1,12 @@
 ---
 title: VGC
-date: 2015-04-08T00:00:00-07:00
+date: 2017-09-29T15:00:05-07:00
 results:
-  - participant: Javier Ayala
+  - participant: Andrew TBD
     title: First Place
-  - participant: Chris Ngai
+  - participant: Kevin Nguyen
     title: Second Place
-  - participant: Shayda Sophia
+  - participant: Anna Wong
     title: Third Place
 ---
 
