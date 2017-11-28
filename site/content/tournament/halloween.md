@@ -1,12 +1,12 @@
 ---
 title: Halloween
-date: 2015-10-30T14:47:30-07:00
+date: 2016-10-28T14:57:11-07:00
 results:
-  - participant: Javier Ayala
+  - participant: Raymond
     title: First Place
   - participant: Tad Mikasa
     title: Second Place
-  - participant: Chris Ngai
+  - participant: Rianna "the Bops" Nandan
     title: Third Place
 ---
 
