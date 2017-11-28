@@ -8,6 +8,7 @@
   </div>
   {{ end }}
   {{ $term := .Site.GetPage "section" "terms" }}
+  {{ $tourn := .Site.GetPage "section" "tournament" }}
   {{ if isset . "Content"}}
   <hr>
   {{ end }}
@@ -26,7 +27,7 @@
     {{ end }}
   </div>
   {{ end }}
-  {{ if isset $term.Data "Pages" }}
+  {{ if (isset $term.Data "Pages") or (isset $tourn.Data "Pages")  }}
   <hr>
   {{ end }}
   {{ end }}
@@ -34,9 +35,9 @@
   <div class="row page-content">
     <a class="anchor" id="history"></a>
     <p class="title center-align" >Hall of Fame!</p>
-    <div class="details">
+    <div class="details hall-of-fame">
     <div class="carousel carousel-slider " data-indicators="true">
-      {{ range $index, $s := .Pages.ByDate }}
+      {{ range $index, $s := .Pages.ByDate.Reverse }}
       <a class="carousel-item">
         <div class="center-align hallOfFame context-text">
           <div class="row">
@@ -44,6 +45,46 @@
         </div>
 
           {{ range $indox, $t := .Params.officers }}
+          <div class="row primary-color-text">
+            <div class="col s6 right-align">
+              <span>{{ $t.title }}: </span>
+            </div>
+            <div class="col s6 left-align">
+              <span style="text-decoration: underline;">{{ $t.participant}}</span>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+
+
+  </div>
+  {{ if isset $tourn.Data "Pages" }}
+   <hr>
+  {{ end }}
+  {{ end }}
+
+  {{ with $tourn }}
+
+  <div class="row page-content">
+    <a class="anchor" id="tournaments"></a>
+    <p class="title center-align" >Tournament Results!</p>
+    <div class="details tournament">
+    <div class="carousel carousel-slider " data-indicators="true">
+      {{ range $index, $s := .Pages.ByDate.Reverse }}
+      <a class="carousel-item">
+        <div class="center-align hallOfFame context-text">
+          <div class="row">
+          <span class="title">{{ $s.Title }} Tournament Champions</span>
+        </div>
+        <div class="row">
+          <span class="title">{{ $s.Date.Format "1/2/2006" }}</span>
+        </div>
+
+          {{ range $indox, $t := .Params.results }}
           <div class="row primary-color-text">
             <div class="col s6 right-align">
               <span>{{ $t.title }}: </span>
