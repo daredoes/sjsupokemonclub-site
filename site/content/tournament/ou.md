@@ -1,12 +1,12 @@
 ---
 title: OU
-date: 2015-09-04T14:43:52-07:00
+date: 2016-02-05T14:49:20-08:00
 results:
   - participant: Javier Ayala
     title: First Place
-  - participant: Chris Ngai
+  - participant: Tad Mikasa
     title: Second Place
-  - participant: Shayda Sophia
+  - participant: Ty Garcia
     title: Third Place
 ---
 
