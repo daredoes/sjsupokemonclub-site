@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  #repo: daredoes/sjsupokemonclub-site # Path to your Github repository
+  name: github
+  repo: daredoes/sjsupokemonclub-site # Path to your Github repository
   branch: master # Branch to update (master by default)
 
 media_folder: "src/img/uploads" # Folder where user uploaded files should go
@@ -50,7 +50,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
           - {label: "Name", name: "participant", widget: "string", required: true}
-          - {label: "Order", name: "weight", widget: "number", default: "1", required: true}
 
 
   - name: "pages"

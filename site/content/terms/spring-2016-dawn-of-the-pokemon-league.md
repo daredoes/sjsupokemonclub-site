@@ -1,6 +1,6 @@
 ---
-title: 'Fall 2016: Steeling the Sun'
-date: 2015-08-15T14:05:03-07:00
+title: 'Spring 2016: Dawn of the Pokemon League'
+date: 2016-01-15T14:05:03-07:00
 officers:
   - participant: Khaila Zherine Flores
     title: President
@@ -12,11 +12,13 @@ officers:
     title: Secretary
   - participant: Roxas Nick
     title: Publicist
+  - participant: Alex Nguyen
+    title: Publicist
   - participant: Nick Boyd
     title: Web Master
   - participant: Claire Koperwas
     title: Jr. Web Master
-  - participant: Rianna Nandan
+  - participant: Javier Ayala-Mora
     title: Historian
   - participant: Tad Mikasa
     title: Event Coordinator

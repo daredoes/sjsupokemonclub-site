@@ -1,6 +1,6 @@
 ---
 title: 'Fall 2017: Fresh Region'
-date: 2017-08-31T10:51:32-07:00
+date: 2016-08-31T10:51:32-07:00
 officers:
   - participant: Patrick Rettinhouse
     title: President
@@ -24,4 +24,3 @@ officers:
     title: Kevin
     weight: '6'
 ---
-

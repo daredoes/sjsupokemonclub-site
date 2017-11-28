@@ -45,11 +45,11 @@
 
           {{ range $indox, $t := .Params.officers }}
           <div class="row primary-color-text">
-            <div class="col s6 left-align">
+            <div class="col s6 right-align">
               <span>{{ $t.title }}: </span>
             </div>
-            <div class="col s6 right-align">
-              <span>{{ $t.participant}}</span>
+            <div class="col s6 left-align">
+              <span style="text-decoration: underline;">{{ $t.participant}}</span>
             </div>
           </div>
           {{ end }}
