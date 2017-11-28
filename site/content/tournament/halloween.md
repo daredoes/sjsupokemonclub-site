@@ -1,12 +1,12 @@
 ---
 title: Halloween
-date: 2016-10-28T14:57:11-07:00
+date: 2017-10-27T15:01:26-07:00
 results:
-  - participant: Raymond
+  - participant: TBD
     title: First Place
-  - participant: Tad Mikasa
+  - participant: TBD
     title: Second Place
-  - participant: Rianna "the Bops" Nandan
+  - participant: TBD
     title: Third Place
 ---
 
