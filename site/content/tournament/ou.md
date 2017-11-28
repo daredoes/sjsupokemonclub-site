@@ -1,12 +1,12 @@
 ---
 title: OU
-date: 2016-02-05T14:49:20-08:00
+date: 2016-06-09T14:54:57-07:00
 results:
-  - participant: Javier Ayala
-    title: First Place
   - participant: Tad Mikasa
+    title: First Place
+  - participant: Raymond
     title: Second Place
-  - participant: Ty Garcia
+  - participant: Joe Giallo
     title: Third Place
 ---
 
