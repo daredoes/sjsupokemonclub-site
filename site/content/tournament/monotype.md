@@ -1,12 +1,12 @@
 ---
 title: Monotype
-date: 2015-11-20T14:48:32-08:00
+date: 2017-11-28T22:54:17.921Z
 results:
-  - participant: Nick Boyd
-    title: First Place
   - participant: Rianna "the Bops" Nandan
+    title: First Place
+  - participant: Shayda Sophia
     title: Second Place
-  - participant: Ty Garcia
+  - participant: Alex Vargas
     title: Third Place
 ---
 
