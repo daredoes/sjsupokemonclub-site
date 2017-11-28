@@ -7,7 +7,7 @@
     </div>
   </div>
   {{ end }}
-  {{ if isset .Params "section" }}
+  {{ $term := .Site.GetPage "section" "terms" }}
   {{ if isset . "Content"}}
   <hr>
   {{ end }}
@@ -26,7 +26,41 @@
     {{ end }}
   </div>
   {{ end }}
+  {{ if isset $term.Data "Pages" }}
+  <hr>
   {{ end }}
+  {{ end }}
+  {{ with $term }}
+  <div class="row page-content">
+    <a class="anchor" id="hallOfFame"></a>
+    <p class="title center-align" >Hall of Fame!</p>
+    <div class="details">
+    <div class="carousel carousel-slider " data-indicators="true">
+      {{ range $index, $s := .Pages.ByDate }}
+      <a class="carousel-item">
+        <div class="center-align hallOfFame context-text">
+          <div class="row">
+          <span class="title">{{ $s.Title }}</span>
+        </div>
+
+          {{ range $indox, $t := .Params.officers }}
+          <div class="row primary-color-text">
+            <div class="col s6 left-align">
+              <span>{{ $t.title }}: </span>
+            </div>
+            <div class="col s6 right-align">
+              <span>{{ $t.participant}}</span>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+
+
+  </div>
   {{ end }}
 
 </div>

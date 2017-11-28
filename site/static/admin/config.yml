@@ -18,6 +18,41 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Weight", name: "weight", widget: "number", default: 50, required: false}
 
+  - name: "tournament"
+    label: "Tournament Results"
+    folder: "site/content/tournament"
+    create: true
+    fields:
+      - {label: "Tournament Name", name: "title", widget: "string"}
+      - {label: "Tournament Description", name: "body", widget: "markdown", required: false}
+      - {label: "Tournament Date", name: "date", widget: "datetime"}
+      - name: "results"
+        label: "Standings"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Standing Name (e.g. First Place)", name: "title", widget: "string", required: true}
+          - {label: "Participant Name", name: "participant", widget: "string", required: true}
+          - {label: "Partipant Standing", name: "weight", widget: "number", default: "1", required: true}
+
+  - name: "terms"
+    label: "Semester Officers"
+    folder: "site/content/terms"
+    create: true
+    fields:
+      - {label: "Semester Title", name: "title", widget: "string"}
+      - {label: "Semester Description", name: "body", widget: "markdown", required: false}
+      - {label: "First Day of the Semester", name: "date", widget: "datetime"}
+      - name: "officers"
+        label: "Officers"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: true}
+          - {label: "Name", name: "participant", widget: "string", required: true}
+          - {label: "Order", name: "weight", widget: "number", default: "1", required: true}
+
+
   - name: "pages"
     label: "Pages"
     folder: "site/content/pages"

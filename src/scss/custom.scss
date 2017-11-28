@@ -194,7 +194,7 @@ $detail-padding: 4em;
 .page-content .details{
   padding-left: $detail-padding;
   padding-right: $detail-padding;
-  
+
   @extend .secondary-color-text
 }
 
@@ -263,4 +263,8 @@ hr::after{
   content: '';
   display: block;
   position: absolute;
+}
+
+.hallOfFame .title{
+  font-size: 2em;
 }
