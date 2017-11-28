@@ -1,12 +1,12 @@
 ---
 title: NU
-date: 2016-03-04T00:00:00-08:00
+date: 2017-10-13T15:00:49-07:00
 results:
-  - participant: Javier Ayala
+  - participant: Nick Boyd
     title: First Place
-  - participant: Claude Michel
+  - participant: Rianna "the Bops" Nandan
     title: Second Place
-  - participant: Will Giallo
+  - participant: Matt Griffin
     title: Third Place
 ---
 
